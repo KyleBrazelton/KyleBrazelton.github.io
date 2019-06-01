@@ -11,7 +11,7 @@ function getRando() {
     let random1 = Math.floor(Math.random() * (100 - 1)) + 1;
     let random2 = Math.floor(Math.random() * (100 - 1)) + 1;
 
-    let equation = document.getElementById('equation').innerHTML = random1 + "+" + random2;
+    document.getElementById('equation').innerHTML = random1 + "+" + random2;
 
 
     function checkSolution() {
