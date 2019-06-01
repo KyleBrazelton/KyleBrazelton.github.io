@@ -16,17 +16,35 @@ function generateProblem() {
 }
 
 function checkSolution() {
-
     //INPUT get two positive integers max 100/addition/
-    let solution = document.getElementById('solution').value;
+    //PROCESSING get integers, check if true compare integers	
+    //OUTPUT answer, of the two integers
+
+    let answer = document.getElementById('solution').value;
+
+    if (answer == (random1 + random2)) {
+        document.getElementById('output').innerHTML = "Correct! Good job."
+        document.getElementById('solution').value = "";
+        generateProblem();
+    } else {
+        document.getElementById('output').innerHTML = "Sorry. That is incorrect."
+        document.getElementById('solution').value = "";
+        generateProblem();
+    }
+
+}
+
+/*    let solution = document.getElementById('solution').value;
     let feedBack;
-    //PROCESSING get integers, check if true compare integers
+  
     let answer = random1 + random2;
     if (solution == answer) {
         feedBack = "Correct! Good job!"
     } else {
         feedBack = "Sorry. That is incorrect."
     }
-    //OUTPUT answer, of the two integers
+  
     document.getElementById('output').innerHTML = feedBack;
 }
+	
+ */
