@@ -27,26 +27,11 @@ function checkSolution() {
     if (answer == (random1 + random2)) {
         document.getElementById('output').innerHTML = "Correct! Good job."
         document.getElementById('solution').value = "";
-        generateProblem();
+
     } else {
         document.getElementById('output').innerHTML = "Sorry. That is incorrect."
         document.getElementById('solution').value = "";
-        generateProblem();
+
     }
 
 }
-
-/*    let solution = document.getElementById('solution').value;
-    let feedBack;
-  
-    let answer = random1 + random2;
-    if (solution == answer) {
-        feedBack = "Correct! Good job!"
-    } else {
-        feedBack = "Sorry. That is incorrect."
-    }
-  
-    document.getElementById('output').innerHTML = feedBack;
-}
-	
- */
