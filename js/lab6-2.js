@@ -8,9 +8,6 @@ document.getElementById('currentdate').innerHTML = date;
 
 // fast way to calculate a random number and display it for the child to work out the problem
 
-let random1;
-let random2;
-
 function generateProblem() {
     let random1 = Math.floor(Math.random() * (100 - 1)) + 1;
     let random2 = Math.floor(Math.random() * (100 - 1)) + 1;
