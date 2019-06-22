@@ -44,3 +44,32 @@ label {
     display: block;
     margin: 5px;
 }
+
+#templeData th {
+    background-color: #333;
+    color: #fff;
+}
+
+#templeData {
+    border-collapse: collapse;
+    margin: 5px auto;
+}
+
+#templeData th {
+    background-color: #333;
+    color: #fff;
+}
+
+#templeData th,
+#templeData td {
+    border: 1px solid #999;
+    padding: 7px;
+}
+
+#templeData tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+#templeData tr:nth-child(even) {
+    background-color: #bed;
+}
