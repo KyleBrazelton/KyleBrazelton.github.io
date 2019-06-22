@@ -1,10 +1,3 @@
-// Get Current Date
-let today = new Date(); // new Date object
-// now concatenate formatted output
-let date =
-    today.getMonth() + 1 + " / " + today.getDate() + " / " + today.getFullYear();
-document.getElementById("currentdate").innerHTML = date;
-
 //INPUT get input from HTML list, on oldest temple.
 //PROCESSING use loop to process html temple data
 //OUTPUT  display temple data
