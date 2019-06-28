@@ -1,8 +1,8 @@
-// Get Current Date 
-let today = new Date(); // new Date object
-// now concatenate formatted output
-let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
-document.getElementById('currentdate').innerHTML = date;
+window.onload = function curDate() {
+    let today = new Date();
+    let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
+    document.getElementById('currentdate').innerHTML = date;
+}
 
 /*Write a defining table and a JavaScript program to compute and output an employee’s after tax pay. Your program will read the number of regular hours that an employee worked and that employee’s wage, and then compute that employee’s after tax pay. Tax is 15% of the employee’s gross pay. Your program should correctly handle real numbers.*/
 

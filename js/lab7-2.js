@@ -1,6 +1,11 @@
-//INPUT  Get input from computers clock. Including Holidays.
-//PROCESSING  mon-fri not holidays =get up, other sleep in. Holidays fixed only
-//OUTPUT display get up or sleep in depending on the day 
+window.onload = function curDate() {
+        let today = new Date();
+        let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
+        document.getElementById('currentdate').innerHTML = date;
+    }
+    //INPUT  Get input from computers clock. Including Holidays.
+    //PROCESSING  mon-fri not holidays =get up, other sleep in. Holidays fixed only
+    //OUTPUT display get up or sleep in depending on the day 
 
 let today = new Date();
 let day = today.getDay();

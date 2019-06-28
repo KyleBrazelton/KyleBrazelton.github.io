@@ -1,8 +1,8 @@
-// Get Current Date
-let today = new Date(); // new Date object
-// now concatenate formatted output
-let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
-document.getElementById('currentdate').innerHTML = date;
+window.onload = function curDate() {
+    let today = new Date();
+    let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
+    document.getElementById('currentdate').innerHTML = date;
+}
 
 //INPUT get integer input from user
 //PROCESSING calculate odd int from 1 to user input number

@@ -1,9 +1,8 @@
-// Get Current Date
-let today = new Date(); // new Date object
-// now concatenate formatted output
-let date =
-    today.getMonth() + 1 + " / " + today.getDate() + " / " + today.getFullYear();
-document.getElementById("currentdate").innerHTML = date;
+window.onload = function curDate() {
+    let today = new Date();
+    let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
+    document.getElementById('currentdate').innerHTML = date;
+}
 
 //INPUT get user input from any integers 1-10 inclusive
 //PROCESSING take number and apply it to a times table for that number

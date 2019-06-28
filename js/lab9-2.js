@@ -1,3 +1,9 @@
+window.onload = function curDate() {
+    let today = new Date();
+    let date = (today.getMonth() + 1) + " / " + today.getDate() + " / " + today.getFullYear();
+    document.getElementById('currentdate').innerHTML = date;
+}
+
 //INPUT get input from HTML list, on oldest temple.
 //PROCESSING use loop to process html temple data
 //OUTPUT  display temple data
