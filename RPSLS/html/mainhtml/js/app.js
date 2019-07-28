@@ -28,8 +28,8 @@ function win(userChoice, compChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    const smallUserWord = "You".fontsize(3).sup();
-    const smallCompWord = "Comp".fontsize(3).sup();
+    const smallUserWord = "YOU".fontsize(3).sup();
+    const smallCompWord = "CPU".fontsize(3).sup();
     result_p.innerHTML = `${convertToWord(userChoice)} ${(smallUserWord)} beats ${convertToWord(compChoice)} ${(smallCompWord)}. You Win! `;
 }
 
@@ -37,15 +37,15 @@ function lose(userChoice, compChoice) {
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    const smallUserWord = "You".fontsize(3).sup();
-    const smallCompWord = "Comp".fontsize(3).sup();
+    const smallUserWord = "YOU".fontsize(3).sup();
+    const smallCompWord = "CPU".fontsize(3).sup();
     result_p.innerHTML = `${convertToWord(userChoice)} ${(smallUserWord)} loses to ${convertToWord(compChoice)} ${(smallCompWord)}. You Lost! `;
 }
 
 function draw(userChoice, compChoice) {
-    const smallUserWord = "You".fontsize(3).sup();
-    const smallCompWord = "Comp".fontsize(3).sup();
-    result_p.innerHTML = `${convertToWord(userChoice)} ${(smallUserWord)} equals ${convertToWord(compChoice)} ${(smallCompWord)}. It's a Draw! `;
+    const smallUserWord = "YOU".fontsize(3).sup();
+    const smallCompWord = "CPU".fontsize(3).sup();
+    result_p.innerHTML = `${convertToWord(userChoice)} ${(smallUserWord)} ties ${convertToWord(compChoice)} ${(smallCompWord)}. It's a Draw! `;
 }
 
 
