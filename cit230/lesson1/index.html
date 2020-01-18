@@ -12,27 +12,28 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body onload="getDates()">
-    <header>
-        <h1>Kyle Brazelton</h1>
-        <img class="face" src="images/rsz_my_face.jpg" alt="Kyle Brazelton Picture">
-    </header>
-    <main>
+<header>
+    <h1>Kyle Brazelton</h1>
+
+</header>
+<main>
+    <section>
         <h2>Assignment Portal: CIT 230</h2>
-        <hr>
         <ul>
-            <li>Lesson 2: <a href="lab2-1.html"> Lab 2-1</a></li>
+            <li>Lesson 2: <a href="/cit230/lesson2/design-principles.html">Design Principles</a></li>
             <li>Lesson 3: <a href="lab3-1.html"> Lab 3-1</a></li>
             <li>Lesson 4: <a href="lab4-1.html"> Lab 4-1</a></li>
         </ul>
-    </main>
-    <footer>
-        &copy;
-        <span id="currentyear"> 2020</span> | Kyle Brazelton | Arizona |
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        <br> Last Updated: <span id="dateMod"></span>
-    </footer>
-    <script src="js/dateMod.js"></script>
+    </section>
+    <img class="face" src="images/rsz_my_face.jpg" alt="Kyle Brazelton Picture">
+</main>
+<footer>
+    &copy;
+    <span id="currentYear"></span> | Kyle Brazelton |
+    <a id="onlineLearn" href="https://www.byui.edu/online">BYUI Online Learning</a> Updated:<span id="updatePage"></span>
+</footer>
+<script src="js/datemod.js"></script>
+<script src="js/update.js"></script>
 </body>
 
 </html>

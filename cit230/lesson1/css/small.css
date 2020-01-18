@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -30,11 +30,11 @@ footer {
 img {
     width: 200px;
     height: auto;
+    float: right;
 }
 
 header,
 nav,
-main,
 footer {
     margin: 0 auto;
     padding: 0.75rem;
@@ -42,8 +42,11 @@ footer {
 }
 
 main {
-    text-align: left;
-    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    grid-gap: 0.8em;
+    padding: 0.8em;
 }
 
 a {
@@ -52,4 +55,9 @@ a {
 
 footer a {
     color: #e5dfd5;
+}
+
+section {
+    border-radius: 15px;
+    text-align: center;
 }

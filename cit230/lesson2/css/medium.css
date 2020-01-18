@@ -2,9 +2,13 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        width: 37em;
     }
     section:nth-child(3) {
         grid-column: span 2;
+    }
+    header,
+    footer {
+        width: 37em;
     }
 }

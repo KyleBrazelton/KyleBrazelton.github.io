@@ -1,17 +1,30 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #D3D3D3;
+    color: #202223;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    margin: auto;
+    grid-gap: 0.8em;
+    padding: 0.8em;
 }
 
-header {
+header,
+footer {
+    background-color: black;
     margin: auto;
-    text-align: center;
+    padding: .25em;
+    color: #efe8e3;
 }
+
+
+/*01b6d1*/
 
 h1,
 h2,
@@ -23,13 +36,13 @@ h4 {
 section {
     background-color: #fff;
     border-radius: 15px;
-    margin-top: 20px;
     text-align: center;
 }
 
 h3 {
     font-size: large;
     font-family: arial;
+    color: black;
 }
 
 section header {
@@ -38,23 +51,32 @@ section header {
 }
 
 img {
-    max-width: 500px;
-    max-height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+    max-width: 90%;
 }
 
-a {
-    text-align: center;
+header {
+    border-radius: 0 0 6px 6px;
 }
 
 footer {
-    text-align: center;
-    padding-top: 20px;
+    border-radius: 6px 6px 0 0;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: .25em;
+    padding-top: 1em;
+}
+
+a:link {
+    color: #01b6d1;
+}
+
+a:visited {
+    color: #01b6d1;
+}
+
+a:hover {
+    color: #a92276;
 }
