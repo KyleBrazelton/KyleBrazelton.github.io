@@ -60,4 +60,18 @@ footer a {
 section {
     border-radius: 15px;
     text-align: center;
+    background-color: #2a4d69;
+    color: white;
+}
+
+a:link {
+    color: #01b6d1;
+}
+
+a:visited {
+    color: #01b6d1;
+}
+
+a:hover {
+    color: #ccc12a;
 }
