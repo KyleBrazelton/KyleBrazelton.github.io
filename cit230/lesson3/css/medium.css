@@ -6,6 +6,9 @@
     footer {
         width: 37em;
     }
+    nav {
+        width: 37em;
+    }
     nav ul {
         display: flex;
     }
@@ -18,7 +21,7 @@
     main {
         grid-template-columns: 1fr 1fr;
     }
-    article:nth-child(3) {
+    section:nth-child(2) {
         grid-column: span 2;
     }
 }

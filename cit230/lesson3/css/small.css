@@ -1,83 +1,88 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background-color: #415236;
-}
-
-header,
-footer {
-    background-color: #000000;
-    color: #FF6700;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-header,
-nav,
-main,
-footer {
-    max-width: 767px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-nav {
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 1em;
-}
-
-main section {
-    margin: 0.5rem;
-    border: 1px solid #ccc;
-    padding: 0 1rem;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    background-color: #CCCCCC;
-    border-radius: 15px 15px 0px 0px;
-}
-
-header {
-    border-radius: 0 0 6px 6px;
-}
-
-footer {
-    border-radius: 6px 6px 0 0;
-}
-
-a:link {
-    color: #ffffff;
-}
-
-a:visited {
-    color: #ffffff;
-}
-
-a:hover {
-    color: #FF6700;
-}
+                        body {
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 16px;
+                            background-color: #415236;
+                        }
+                        
+                        header,
+                        footer {
+                            background-color: #000000;
+                            color: #FF6700;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 20px;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                        
+                        header,
+                        nav,
+                        main,
+                        footer {
+                            max-width: 767px;
+                            margin: 0 auto;
+                        }
+                        
+                        h1 {
+                            font-size: 3em;
+                        }
+                        
+                        nav {
+                            font-size: 1em;
+                            text-align: center;
+                            background-color: #ccc;
+                            box-shadow: 0 2px 15px darkslategray;
+                        }
+                        
+                        nav ul {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                        }
+                        
+                        nav li a {
+                            display: block;
+                            color: #ffffff;
+                            text-align: center;
+                            padding: 0.75rem;
+                            text-decoration: none;
+                            padding: 1em;
+                        }
+                        
+                        nav a:hover {
+                            background-color: #fff;
+                        }
+                        
+                        main section {
+                            margin: 0.5rem;
+                            border: 1px solid #ccc;
+                            padding: 1rem;
+                        }
+                        
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        section {
+                            background-color: #CCCCCC;
+                            border-radius: 15px 15px 15px 15px;
+                        }
+                        
+                        footer {
+                            height: 2rem;
+                        }
+                        
+                        .onPage {
+                            color: #FF6700;
+                        }
+                        
+                        .offPage {
+                            color: #000;
+                        }
+                        
+                        #onlineLearn {
+                            color: white;
+                        }
