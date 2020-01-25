@@ -19,6 +19,11 @@ h2 {
     color: white;
 }
 
+ul {
+    list-style: none;
+    text-align: left;
+}
+
 header,
 footer {
     background: #2a4d69;
