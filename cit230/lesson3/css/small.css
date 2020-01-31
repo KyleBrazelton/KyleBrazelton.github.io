@@ -51,7 +51,9 @@
                         }
                         
                         nav a:hover {
-                            background-color: #fff;
+                            background-color: #000;
+                            font-weight: bold;
+                            color: white;
                         }
                         
                         main section {
@@ -81,6 +83,7 @@
                         
                         .onPage {
                             color: #FF6700;
+                            font-weight: bold;
                         }
                         
                         .offPage {
