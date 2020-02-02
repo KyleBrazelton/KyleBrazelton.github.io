@@ -1,67 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
+    <title>CIT 230 Portal</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <title> Rock Paper Scissors Lizard Spock</title>
-    <meta name="description" content="Rock Paper Scissors Lizard Spock Game">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap:400,500,600&display=swap">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kyle Brazelton's assignment portal for CIT 230-Winter 2020- BYU-I ">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<header>
+    <h1>Kyle Brazelton</h1>
+</header>
+<main>
+    <section class="sect1">
+        <h2>Assignment Portal: CIT 230</h2>
+        <ul>
+            <li>Lesson 2: <a href="/cit230/lesson2/design-principles.html">Design Principles</a></li>
+            <li>Lesson 3: <a href="/cit230/lesson3/index.html"> Weather Plan</a></li>
+            <li>Lesson 4: <a href="/cit230/lesson4/preston-4.html"> Preston Town Home Page</a></li>
 
-    <header>
-        <h1>Rock Paper Scissors Lizard Spock</h1>
-    </header>
-
-    <div class="score-board">
-        <div id="user-label" class="badge">User</div>
-        <div id="comp-label" class="badge">Cpu</div>
-        <span id="user-score">0</span> :
-        <span id="computer-score">0</span>
-    </div>
-
-    <div>
-        <p class="result"></p>
-    </div>
-
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="images\Rock.png" alt="">
-        </div>
-        <div class="choice" id="paper">
-            <img src="images\Paper.png" alt="">
-        </div>
-        <div class="choice" id="scissors">
-            <img src="images\Scissors2.png" alt="">
-        </div>
-        <div class="choice" id="lizard">
-            <img src="images\Lizard.png" alt="">
-        </div>
-        <div class="choice" id="spock">
-            <img src="images\Spock.png" alt="">
-        </div>
-    </div>
-
-
-
-    <p id="action-message">Make Your Move</p>
-
-    <div class="ruleSet">
-        <img class="ruleset2" src="images/RPSLS.png" alt="Ruleset for RPSLS">
-    </div>
-
-    <footer>
-        <p>
-
-        </p>
-
-    </footer>
-
-
-    <script src="js/app.js"></script>
+        </ul>
+    </section>
+    <img class="face" src="images/rsz_my_face.jpg" alt="Kyle Brazelton Picture">
+</main>
+<footer>
+    &copy;
+    <span id="currentYear"></span> | Kyle Brazelton |
+    <a id="onlineLearn" href="https://www.byui.edu/online">BYUI Online Learning</a> Updated:<span id="updatePage"></span>
+</footer>
+<script src="js/datemod.js"></script>
+<script src="js/update.js"></script>
 </body>
 
 </html>

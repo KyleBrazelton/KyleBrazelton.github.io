@@ -12,6 +12,7 @@ h1 {
     font-size: 2.5rem;
     margin: 0.15rem;
     color: #ccc12a;
+    text-align: center;
 }
 
 h2 {
@@ -28,8 +29,12 @@ header,
 footer {
     background: #2a4d69;
     color: #ccc12a;
-    height: 4em;
     text-align: center;
+    border-radius: 15px;
+}
+
+footer {
+    height: 80%;
 }
 
 img {
