@@ -53,7 +53,7 @@ footer {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
     margin: auto;
     grid-gap: 0.8em;
     padding: 0.8em;
