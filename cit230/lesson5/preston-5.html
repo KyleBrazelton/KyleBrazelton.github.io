@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="description" content="Local weather for Preston Idaho">
+    <title>Preston Town Home Page</title>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="/cit230/lesson5/images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img class="wHunt" id="weatherIcon" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <section class="headings">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li class="active"><a href="index.html" class="onPage">Preston</a>
+                    <li><a href="index.html" class="onPage">Soda Springs</a>
+                        <li><a href="index.html" class="onPage">Fish Haven</a>
+                            <li><a href="index.html" class="onPage">Storm Center</a>
+                                <li><a href="index.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="pageHero">
+            <img class="heroImg" src="images/prestonHerojpg.jpg" alt="Picture of Preston Idaho">
+            <section class="weatherSummary">
+                <p>Currently:<span> 25&#x2109; </span></p>
+                <p>High:<span> 42&#x2109;</span></p>
+                <p>Wind Chill:<span> 15&#x2109;</span></p>
+                <p>Humidity:<span> 90%</span></p>
+                <p>Wind Speed:<span> 24 MPH</span></p>
+            </section>
+        </div>
+        <div class="pageForecast">
+            <h3>5 Day Forecast</h3>
+            <section class="gridCast">
+                <div class="fore">
+                    <br>
+                    <br>
+                    <p>Wednesday</p>
+                </div>
+                <div class="fore"> <br>
+                    <br>
+                    <p>Thursday</p>
+                </div>
+                <div class="fore"> <br>
+                    <br>
+                    <p>Friday</p>
+                </div>
+                <div class="fore"> <br>
+                    <br>
+                    <p>Saturday</p>
+                </div>
+                <div class="fore"> <br>
+                    <br>
+                    <p>Sunday</p>
+                </div>
+                <div class="fore">
+                    <img class="iconImage" src="images/iconfinder_Foggy_3741362.png" alt="Snow Icon">
+                    <p>32&#x2109;</p>
+                </div>
+                <div class="fore">
+                    <img class="iconImage" src="images/iconfinder_Foggy_3741362.png" alt="Snow Icon">
+                    <p>34&#x2109;</p>
+                </div>
+                <div class="fore">
+                    <img class="iconImage" src="images/iconfinder_Foggy_3741362.png" alt="Snow Icon">
+                    <p>39&#x2109;</p>
+                </div>
+                <div class="fore">
+                    <img class="iconImage" src="images/iconfinder_Partly_Cloudy_3741357.png" alt="Snow Icon">
+                    <p>42&#x2109;</p>
+                </div>
+                <div class="fore">
+                    <img class="iconImage" src="images/iconfinder_Snow_3741358.png" alt="Snow Icon">
+                    <p>16&#x2109;</p>
+                </div>
+
+
+            </section>
+        </div>
+        <div class="pageArticle">
+            <section>
+                <h3>Playing in the Snow</h3>
+                <h4>by Kyle Brazelton</h4>
+                <p>
+                    Sometimes you just need to play with a puppy in the snow. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... &nbsp; <span class="articleLink">continue to article</span>
+                </p>
+            </section>
+            <img class="articlePuppers" src="images/prestonArticleImagewk5.jpeg" alt="Picture of a Puppy Playing in the Snow">
+        </div>
+        <div class="pageContact">
+            <img class="pageMap" src="images/prestonContactMapwk5.jpg" alt="Map of Preston Idaho">
+            <section class="contactInfo">
+
+                <p>
+                    <h3>Weather Hunter</h4>
+                        151 E 2nd S
+                        <br>Preston, ID 83263
+                        <br>#208-852-0280
+                        <br>info@weatherhunter.org
+                </p>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js"></script>
+    <script src="js/toggleMenu.js"></script>
+
+</body>
+
+</html>
