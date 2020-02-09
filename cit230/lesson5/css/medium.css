@@ -8,6 +8,9 @@
     .headings h1 {
         font-size: 3rem;
     }
+    .wHunt {
+        width: 200px;
+    }
     .motto {
         letter-spacing: 1.5pt;
         font-size: larger;

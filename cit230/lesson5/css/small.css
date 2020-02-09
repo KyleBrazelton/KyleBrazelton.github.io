@@ -10,18 +10,16 @@ header footer {
     text-align: left;
 }
 
-.headings {
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 200px;
 }
 
-.wHunt {}
-
-.huntTitle {}
+.wHunt {
+    width: 150px;
+}
 
 .headings h1 {
     font-size: 1.6rem;
