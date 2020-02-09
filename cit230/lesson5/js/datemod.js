@@ -28,3 +28,11 @@ window.onload = function getDate() {
     let strDate = curDay + ", " + date.getDate() + " " + curMonth + " " + date.getFullYear();
     document.getElementById("currentDate").innerHTML = strDate;
 }
+
+function announce() {
+    let day = new Date();
+    let today = day.getDay();
+    if (today == 5) {
+        document.getElementById("satPancake").style.display = "block";
+    }
+}

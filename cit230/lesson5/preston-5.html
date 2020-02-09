@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Preston ID </title>
     <meta name="description" content="Local weather for Preston Idaho">
-    <title>Preston Town Home Page</title>
-
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -17,11 +16,19 @@
 </head>
 
 <body>
+    <div class="satPancake">
+        <span>
+        Saturday - Preston Pancakes in the Park! <br> 9:00 a.m. at the City Park.
+    </span>
+    </div>
+
     <header>
-        <img class="wHunt" id="weatherIcon" src="images/weatherIcon.png" alt="Weather Site Logo">
         <section class="headings">
-            <h1>Weather Hunter</h1>
-            <div class="motto">Hunting the weather, before it hunts you.</div>
+            <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+            <div class="huntTitle">
+                <h1>Weather Hunter</h1>
+                <div class="motto">Hunting the weather, before it hunts you.</div>
+            </div>
         </section>
     </header>
     <nav class="clearfix">
@@ -29,7 +36,7 @@
         <ul id="primaryNav" class="hide">
             <li class="liMenu"></li>
             <li><a href="index.html" class="onPage">Home</a>
-                <li class="active"><a href="index.html" class="onPage">Preston</a>
+                <li class="active"><a href="preston-5.html" class="onPage">Preston</a>
                     <li><a href="index.html" class="onPage">Soda Springs</a>
                         <li><a href="index.html" class="onPage">Fish Haven</a>
                             <li><a href="index.html" class="onPage">Storm Center</a>
@@ -126,8 +133,11 @@
         &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
         <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
     </footer>
-    <script src="js/datemod.js"></script>
+    <script src="js/datemod.js">
+        announce();
+    </script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/fancyfeast.js"></script>
 
 </body>
 
