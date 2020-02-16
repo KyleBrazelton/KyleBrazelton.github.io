@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="shortcut icon" href="/cit230/lesson5/images/favicon.ico">
+    <link rel="shortcut icon" href="/cit230/lesson6/images/favicon.ico">
 
 </head>
 
 <body>
-    <div class="satPancake">
+    <div id="satPancake" class="satPancake">
         <span>
         Saturday - Preston Pancakes in the Park! <br> 9:00 a.m. at the City Park.
     </span>
@@ -36,7 +36,7 @@
         <ul id="primaryNav" class="hide">
             <li class="liMenu"></li>
             <li><a href="index.html" class="onPage">Home</a>
-                <li class="active"><a href="preston-5.html" class="onPage">Preston</a>
+                <li class="active"><a href="preston-6.html" class="onPage">Preston</a>
                     <li><a href="index.html" class="onPage">Soda Springs</a>
                         <li><a href="index.html" class="onPage">Fish Haven</a>
                             <li><a href="index.html" class="onPage">Storm Center</a>
@@ -46,13 +46,18 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="pageHero">
-            <img class="heroImg" src="images/prestonHerojpg.jpg" alt="Picture of Preston Idaho">
+            <picture>
+                <source srcset="images/1200pxLarge.jpg" media="(min-width: 65em)">
+                <source srcset="images/800pxMedium.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                <img class="heroImg" src="images/400pxSmall.jpg" alt="responsive hero images">
+            </picture>
             <section class="weatherSummary">
-                <p>Currently:<span> 25&#x2109; </span></p>
-                <p>High:<span> 42&#x2109;</span></p>
-                <p>Wind Chill:<span> 15&#x2109;</span></p>
-                <p>Humidity:<span> 90%</span></p>
-                <p>Wind Speed:<span> 24 MPH</span></p>
+                <h3>Weather Summary</h3>
+                <p>Currently:<span>25&#x2109; </span></p>
+                <p>High:<span id="windT">29</span>&#x2109;</p>
+                <p>Wind Chill:<span id="windChill"> </span>&#x2109;</p>
+                <p>Humidity:<span>90%</span></p>
+                <p>Wind Speed:<span id="windS">10</span> MPH</p>
             </section>
         </div>
         <div class="pageForecast">
@@ -119,11 +124,11 @@
             <section class="contactInfo">
 
                 <p>
-                    <h3>Weather Hunter</h4>
-                        151 E 2nd S
-                        <br>Preston, ID 83263
-                        <br>#208-852-0280
-                        <br>info@weatherhunter.org
+                    <h3>Weather Hunter</h3>
+                    151 E 2nd S
+                    <br>Preston, ID 83263
+                    <br>#208-852-0280
+                    <br>info@weatherhunter.org
                 </p>
             </section>
         </div>
@@ -136,6 +141,7 @@
     <script src="js/datemod.js">
     </script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/windchill.js"></script>
 
 </body>
 

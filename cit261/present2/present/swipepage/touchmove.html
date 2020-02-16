@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>CIT 261 DEMO </title>
+    <meta name="description" content="Demonstration of the Touch Events JS">
+    <link rel="stylesheet" href="css/touchmove.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="page1" class="page1" ontouchstart="p1handleTouchStart(event)" ontouchmove="p1handleTouchMove(event)" ontouchend="p1handleTouchEnd(event)"><span class="center">Page 1</span></div>
+    <div id="page2" class="page2" ontouchstart="p2handleTouchStart(event)" ontouchmove="p2handleTouchMove(event)" ontouchend="p2handleTouchEnd(event)"><span class="center">Page 2</span></div>
+</body>
+<script src="js/touchmove.js">
+</script>
+
+</html>
