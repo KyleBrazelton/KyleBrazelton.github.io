@@ -6,10 +6,6 @@ body {
     text-align: center;
 }
 
-header footer {
-    text-align: left;
-}
-
 header {
     display: flex;
     flex-direction: row;
@@ -19,11 +15,6 @@ header {
 
 .wHunt {
     width: 150px;
-}
-
-.headings h1 {
-    font-size: 1.6rem;
-    margin: 0 0 0 20px;
 }
 
 .motto {
@@ -132,7 +123,6 @@ footer {
 }
 
 .pageArticle {
-    display: grid 1fr 1fr;
     margin: 10px auto;
     border: 1px solid #000000;
     padding: 20px;
