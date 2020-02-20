@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="description" content="Lazy Loading Images Example for Cit 230">
+    <title>Lazy Loading Images</title>
+
+
+    <link rel="stylesheet" href="css/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy/Progressive Loading Images</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/placeholder.png" data-src="https://placeimg.com/300/400/animals" alt="animals">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="https://placeimg.com/300/400/arch" alt="architecture">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="https://placeimg.com/300/400/nature" alt="nature">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="https://placeimg.com/300/400/people" alt="people">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="https://placeimg.com/300/400/tech" alt="technology">
+        </picture>
+    </main>
+    <footer>
+        &copy;
+        <span id="currentYear"></span> | Kyle Brazelton |
+        <a id="onlineLearn" href="https://www.byui.edu/online">BYUI Online Learning</a> Updated: <span id="currentDate"></span>
+
+    </footer>
+
+    <script src="js/datemod.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
