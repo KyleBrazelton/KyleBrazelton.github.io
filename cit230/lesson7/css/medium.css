@@ -14,7 +14,7 @@
         margin: auto;
         padding: 5px;
     }
-    .pageImages {
+    .gallery {
         grid-template-columns: 1fr 1fr;
         grid-gap: 12px 12px;
     }

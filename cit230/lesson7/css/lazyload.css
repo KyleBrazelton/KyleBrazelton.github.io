@@ -15,14 +15,14 @@ main {
 img {
     border: 1px solid #333;
     padding: 1.5px;
-    filter: blur(0.5em);
+    filter: blur(0.0em);
     transition: filter 0.5s;
     width: 300px;
     height: 400px;
 }
 
 img[data-src] {
-    filter: blur(0.0em);
+    filter: blur(0.2em);
 }
 
 header {

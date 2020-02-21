@@ -40,20 +40,17 @@
     h2 {
         font-size: 2rem;
     }
-    .pageImages {
+    .gallery {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 12px 12px;
         margin: 10px;
     }
-    .galleryImage:hover {
+    .galleryImg:hover {
         box-shadow: 0 1px 8px black;
     }
     .motto {
         letter-spacing: 1.5pt;
         font-size: x-large;
         margin-left: 20px;
-    }
-    img[data-src]:hover {
-        opacity: 4;
     }
 }
