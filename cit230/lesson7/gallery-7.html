@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Gallery Images </title>
+    <meta name="description" content="Local weather Gallery">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="/cit230/lesson6/images/favicon.ico">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li class=><a href="preston-6.html" class="onPage">Preston</a>
+                    <li><a href="index.html" class="onPage">Soda Springs</a>
+                        <li><a href="index.html" class="onPage">Fish Haven</a>
+                            <li><a href="index.html" class="onPage">Storm Center</a>
+                                <li class="active"><a href="gallery-7.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="pageImages">
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id1.jpg" alt="Idaho Skiing Club">
+                </picture>
+                <div class="caption">Idaho Skiing Club</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id2.jpg" alt="Cloudy Trail">
+                </picture>
+                <div class="caption">Cloudy Trail Hike</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id3.jpg" alt="Sunny River">
+                </picture>
+                <div class="caption">Summer Swimming Hole</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id4.jpg" alt="Snowed Valley">
+                </picture>
+                <div class="caption">Deep Valley Snow</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id5.jpg" alt="Shady Waterfall">
+                </picture>
+                <div class="caption">Fall Waterfall in Island Park</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id6.jpg" alt="Clear Mountain Snow">
+                </picture>
+                <div class="caption">Foggy with a Chance of Sun</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id7.jpg" alt="Snowy Bench">
+                </picture>
+                <div class="caption">Snow Picnics Today</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id8.jpg" alt="Clear Tetons">
+                </picture>
+                <div class="caption">Clear Tetons</div>
+            </div>
+
+
+            <div class="galleryChildren">
+                <picture>
+                    <img class="galleryImg" src="images/placeholder.png" data-src="images/id9.jpg" alt="Cloudy River">
+                </picture>
+                <div class="caption">Cloudy River</div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js">
+    </script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/lazyload.js"></script>
+
+
+</body>
+
+</html>

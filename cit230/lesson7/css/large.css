@@ -1,0 +1,59 @@
+@media only screen and (min-width: 65em) {
+    nav {
+        background: #1e5799;
+        background: linear-gradient(to bottom, #1e5799 0%, #207cca 0%, #ff6700 0%, #e18d01 100%);
+    }
+    .primaryNav {
+        display: flex;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: block;
+    }
+    nav ul {
+        margin-left: 2%;
+        display: flex;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 2.8rem;
+    }
+    header img {
+        width: 250px;
+    }
+    .heroImg {
+        width: 100%;
+        height: auto;
+    }
+    .headings h1 {
+        font-size: 4rem;
+    }
+    main {
+        width: 75em;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .pageImages {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 12px 12px;
+        margin: 10px;
+    }
+    .galleryImage:hover {
+        box-shadow: 0 1px 8px black;
+    }
+    .motto {
+        letter-spacing: 1.5pt;
+        font-size: x-large;
+        margin-left: 20px;
+    }
+    img[data-src]:hover {
+        opacity: 4;
+    }
+}
