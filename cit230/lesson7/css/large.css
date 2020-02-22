@@ -34,8 +34,8 @@
     .headings h1 {
         font-size: 4rem;
     }
-    main {
-        width: 75em;
+    main footer {
+        max-width: 75em;
     }
     h2 {
         font-size: 2rem;
@@ -45,8 +45,17 @@
         grid-gap: 12px 12px;
         margin: 10px;
     }
-    .galleryImg:hover {
-        box-shadow: 0 1px 8px black;
+    figure:hover {
+        box-shadow: 0 0px 50px black;
+    }
+    figure {
+        padding: 15px 5px 0px;
+    }
+    figure figcaption {
+        visibility: hidden;
+    }
+    figure:hover figcaption {
+        visibility: visible;
     }
     .motto {
         letter-spacing: 1.5pt;

@@ -83,20 +83,24 @@ footer {
     color: white;
 }
 
-main div {
-    grid-template-columns: 1fr 1fr;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    text-align: center;
+    grid-gap: 20px;
+    margin: auto;
+    padding: 15px;
+}
+
+main div figure {
     margin: 0;
-    height: auto;
 }
 
 main div figure figcaption {
     font-style: italic;
+}
+
+figure figcaption {
+    visibility: hidden;
 }
 
 .galleryImg {
