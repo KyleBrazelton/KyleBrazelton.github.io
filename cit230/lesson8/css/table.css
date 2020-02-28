@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body {
+    font-family: 'ubuntu', 'sans-serif';
+    font-size: 16px;
+}
+
+h1,
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: lime;
+}
+
+table {
+    font-size: 1.2em;
+    text-align: center;
+    table-layout: auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead,
+tfoot {
+    background-color: #7fb9c2;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #e7ffed;
+}
+
+thead tr:nth-child(2) {
+    background-color: #628ca6;
+    color: white;
+    font-style: bold;
+}
+
+td {
+    width: 30%;
+    border: 0.1px solid black;
+}
+
+th {
+    text-align: center;
+}
+
+table tbody td.bfNum {
+    background-color: #628ca6;
+}
+
+
+/* The color scheme includes #e7f0ed grn, #e7ffed dark (data rows) and #628ca6, #7fb9c2 along with standard white and black. */
