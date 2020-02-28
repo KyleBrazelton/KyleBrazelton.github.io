@@ -8,7 +8,11 @@ h1,
 footer {
     display: flex;
     justify-content: center;
-    padding: 10px
+    padding: 5px
+}
+
+footer {
+    margin-top: 10px;
 }
 
 a:visited {
@@ -20,7 +24,7 @@ a:link {
 }
 
 a:hover {
-    color: lime;
+    color: #7fb9c2;
 }
 
 table {
@@ -39,11 +43,11 @@ tfoot {
     background-color: #7fb9c2;
 }
 
-tbody tr:nth-child(even) td {
+tbody tr:nth-child(odd) td {
     background-color: #e7f0ed;
 }
 
-tbody tr:nth-child(odd) td {
+tbody tr:nth-child(even) td {
     background-color: #e7ffed;
 }
 
