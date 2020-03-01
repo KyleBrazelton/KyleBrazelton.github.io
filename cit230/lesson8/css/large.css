@@ -122,4 +122,7 @@
         font-size: 1rem;
         text-align: left;
     }
+    form label.sbs {
+        padding: .4rem 0;
+    }
 }

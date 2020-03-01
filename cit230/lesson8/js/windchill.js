@@ -5,3 +5,7 @@ if (t < 50 && s > 3) {
 } else {
     document.getElementById("windChill").textContent = " N/A"
 }
+
+function adjustRating(rating) {
+    document.getElementById("severity").innerHTML = rating;
+}

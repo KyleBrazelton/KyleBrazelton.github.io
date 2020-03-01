@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Preston ID </title>
+    <meta name="description" content="Local weather for Preston Idaho">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="/cit230/lesson8/images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li><a href="preston-6.html" class="onPage">Preston</a>
+                    <li><a href="index.html" class="onPage">Soda Springs</a>
+                        <li><a href="index.html" class="onPage">Fish Haven</a>
+                            <li class="active"><a href="index.html" class="onPage">Storm Center</a>
+                                <li><a href="index.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2>Thank you!</h2>
+        <p>Your user and storm information have been successfully submitted to Weather Hunter. Feel free to sign up for our email and alert newsletter as well. As always stay safe out there with constant updates from Weather Hunter.</p>
+    </main>
+    <footer>
+        <div class="at"> &copy; </div> Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
