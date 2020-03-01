@@ -58,8 +58,8 @@
                     <option value="Thunderstorm"> </option> 
                     <option value="Tornado"> </option> 
                 </datalist> </label>
-                <label for="severity" id="severity" class="top">Storm Severity &nbsp; <span class="severity" id="severity">5</span> 
-                <input type="range" class="slider" id="severityRange" value="5" min="1" max="10" step="1" list="tickmarks" 
+                <label for="severe" id="severe" class="top">Storm Severity &nbsp; <span class="severity" id="severity">5</span> 
+                <input for="severityRange" type="range" class="slider" id="severityRange" value="5" min="1" max="10" step="1" list="tickmarks" 
                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <datalist id="tickmarks">
                     <option value="0">
@@ -79,10 +79,7 @@
                     <option value="Preston"> Preston</option>
                     <option value="Soda Springs">Soda Springs</option>
                     <option value="storm haven">Storm Haven</option>
-                    </select>
-
-                   
-
+                    </select> </label>
             </fieldset>
             <fieldset>
                 <legend>Danger Information </legend>
@@ -96,12 +93,7 @@
                 <legend>Other Information</legend>
                 <label class="top" for="information">Additional Information/Comments </label>
                 <textarea id="information" name="information" placeholder="Please fill out any other relevant information." rows="4" cols="40"></textarea>
-
-                </select>
                 </label>
-
-
-
             </fieldset>
             <input type="submit" value="Submit" class="submitBtn">
         </form>
