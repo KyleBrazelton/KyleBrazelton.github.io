@@ -49,7 +49,7 @@
             <fieldset>
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date  <input type="date" name="date" ></label>
-                <label class="top">Storm Type <input type="list" list="stormType" name="stormType" placeholder="Select Storm Type">
+                <label class="top">Storm Type <input type="text" list="stormType" name="stormType" placeholder="Select Storm Type">
                     <datalist id="stormType">
                     <option value=""> &#9662;</option>
                     <option value="Flash Flood"></option>
@@ -57,8 +57,8 @@
                     <option value="Hurricane"> </option> 
                     <option value="Thunderstorm"> </option> 
                     <option value="Tornado"> </option> 
-                </datalist>
-                <label for="severity" class="top">Storm Severity &nbsp; <span class="severity" id="severity">5</span> 
+                </datalist> </label>
+                <label for="severity" id="severity" class="top">Storm Severity &nbsp; <span class="severity" id="severity">5</span> 
                 <input type="range" class="slider" id="severityRange" value="5" min="1" max="10" step="1" list="tickmarks" 
                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <datalist id="tickmarks">
@@ -73,7 +73,7 @@
                     <option value="8">
                     <option value="9">
                     <option value="10">
-                </datalist>
+                </datalist> </label>
                 <label class="top">Storm Region <select name="subject">
                     <option value="">Select Region &#9662;</option>
                     <option value="Preston"> Preston</option>
