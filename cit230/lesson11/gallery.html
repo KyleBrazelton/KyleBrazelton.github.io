@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Gallery Images </title>
+    <meta name="description" content="Local weather Gallery">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="/cit230/lesson6/images/favicon.ico">
+
+</head>
+
+<body>
+
+
+    <header class="galleryHead">
+
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li><a href="preston.html" class="onPage">Preston</a>
+                    <li><a href="sodasprings.html" class="onPage">Soda Springs</a>
+                        <li><a href="fishhaven.html" class="onPage">Fish Haven</a>
+                            <li><a href="stormcenter.html" class="onPage">Storm Center</a>
+                                <li class="active"><a href="gallery.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+
+    <main class="galleryMain">
+        <h2>Weather Gallery</h2>
+        <div class="gallery">
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id1.jpg" alt="Idaho Skiing Club">
+                <figcaption>Idaho Skiing Club</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id2.jpg" alt="Cloudy Trail">
+                <figcaption>Cloudy Trail Hike</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id3.jpg" alt="Sunny River">
+                <figcaption>Summer Swimming Hole</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id4.jpg" alt="Snowed Valley">
+                <figcaption>Deep Valley Snow</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id5.jpg" alt="Shady Waterfall">
+                <figcaption>Fall Waterfall in Island Park</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id6.jpg" alt="Clear Mountain Snow">
+                <figcaption>Foggy with a Chance of Sun</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id7.jpg" alt="Snowy Bench">
+                <figcaption>Snow Picnics Today</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id8.jpg" alt="Clear Tetons">
+                <figcaption>Clear Tetons</figcaption>
+            </figure>
+
+            <figure>
+                <img class="galleryImg" src="images/placeholder.png" data-src="images/id9.jpg" alt="Cloudy River">
+                <figcaption>Cloudy River</figcaption>
+            </figure>
+        </div>
+
+    </main>
+    <footer class="galleryFoot">
+        &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/lazyload.js"></script>
+
+
+</body>
+
+</html>

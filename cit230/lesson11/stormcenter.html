@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Preston ID </title>
+    <meta name="description" content="Local weather for Preston Idaho">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="/cit230/lesson8/images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li><a href="preston.html" class="onPage">Preston</a>
+                    <li><a href="sodasprings.html" class="onPage">Soda Springs</a>
+                        <li><a href="fishhaven.html" class="onPage">Fish Haven</a>
+                            <li class="active"><a href="stormcenter.html" class="onPage">Storm Center</a>
+                                <li><a href="gallery.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="stormIt">StormCenter</h2>
+        <form class="stormIt" method="get" action="thanks.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="top">Phone <input type="tel" name="phone" pattern="[0-9].{10}" required placeholder="6235662333"></label>
+                <label class="top">Email* <input type="email" name="email"  placeholder="kyle@weatherHunter.com"></label>
+                <label class="top">Zip Code <input type="text" name="zip" pattern="[0-9]*" placeholder="85383" required ></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date  <input type="date" name="date" ></label>
+                <label class="top">Storm Type <input type="text" list="stormType" name="stormType" placeholder="Select Storm Type">
+                    <datalist id="stormType">
+                    <option value=""> &#9662;</option>
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"> </option>
+                    <option value="Hurricane"> </option> 
+                    <option value="Thunderstorm"> </option> 
+                    <option value="Tornado"> </option> 
+                </datalist> </label>
+                <label class="top">Storm Severity &nbsp; <span class="severity" id="severity">5</span> 
+                <input for="severityRange" type="range" class="slider" id="severityRange" value="5" min="1" max="10" step="1" list="tickmarks" 
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist> </label>
+                <label class="top">Storm Region <select name="subject">
+                    <option value="">Select Region &#9662;</option>
+                    <option value="Preston"> Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="storm haven">Storm Haven</option>
+                    </select> </label>
+            </fieldset>
+            <fieldset>
+                <legend>Danger Information </legend>
+                <div>User In-Danger</div>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="dangerLevel" value="maybe"> Maybe</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Information</legend>
+                <label class="top" for="information">Additional Information/Comments </label>
+                <textarea id="information" name="information" placeholder="Please fill out any other relevant information." rows="4" cols="40"></textarea>
+
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <div class="at"> &copy; </div> Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

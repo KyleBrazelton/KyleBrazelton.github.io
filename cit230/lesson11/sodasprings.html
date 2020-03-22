@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Soda Springs ID </title>
+    <meta name="description" content="Local weather for Soda Springs Idaho">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li><a href="preston.html" class="onPage">Preston</a>
+                    <li class="active"><a href="sodasprings.html" class="onPage">Soda Springs</a>
+                        <li><a href="fishhaven.html" class="onPage">Fish Haven</a>
+                            <li><a href="stormcenter.html" class="onPage">Storm Center</a>
+                                <li><a href="gallery.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="township">Soda Springs, Idaho</h2>
+        <div class="pageHero">
+            <picture>
+                <source srcset="images/sodaSpringsLRG.jpg" media="(min-width: 65em)">
+                <source srcset="images/sodaSpringsMED.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                <img class="heroImg" src="images/sodaSpringsSML.jpg" alt="responsive soda springs images">
+            </picture>
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="condition"></span> & <span id="current-temp"></span>&#176;F</p>
+                <p>Temp High: <span id="windT"></span>&#176;F</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windS"></span> MPH</p>
+            </section>
+        </div>
+        <div class="pageForecast">
+            <h3>5 Day Forecast</h3>
+            <div class="gridCast">
+                <div class="fore">
+                    <span class="foreCast" id="day1"></span>
+                    <img src="" alt="" id="icon1" />
+                    <span class="infoCast" id="foreTemp1"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day2"></span>
+                    <img src="" alt="" id="icon2" />
+                    <span class="infoCast" id="foreTemp2"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day3"></span>
+                    <img src="" alt="" id="icon3" />
+                    <span class="infoCast" id="foreTemp3"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day4"></span>
+                    <img src="" alt="" id="icon4" />
+                    <span class="infoCast" id="foreTemp4"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day5"></span>
+                    <img src="" alt="" id="icon5" />
+                    <span class="infoCast" id="foreTemp5"></span>
+                </div>
+            </div>
+            <div class="events"></div>
+        </div>
+        <div class="divArticle">
+
+            <div class="pageArticle">
+                <img src="images/coronaBee.jpeg" alt="Picture of a Puppy Playing in the Snow" class="articlePuppers">
+                <h3>How to avoid coronavirus this spring!</h3>
+                <h4>by Kyle Brazelton</h4>
+                <p>
+                    the Coronavirus (COVID-19) outbreak that originated in Wuhan, China, and has begun to spread around the globe. We are monitoring developments, reviewing our protocols, and preparing for appropriate actions as the situation potentially evolves. Just as
+                    done for previous flu outbreaks (such as the H1N1 virus in 2009), the College is and will work closely with the CDC, MN Public Health, Boynton Health Services at the University of Minnesota, and Mayo Clinic who operates the Express
+                    Care Clinic on our campus. At the time of writing this notice, there are no known cases of coronavirus in the state of Minnesota, and none of our campus community has recently traveled to Wuhan, China. As with any other virus, the
+                    best way to prevent infection is to avoid being exposed to a virus. You can help to prevent the spread of any respiratory virus by doing the following: Wash your hands often with soap and water for at least 20 seconds Avoid close contact
+                    with persons who have respiratory illness symptoms Avoid touching your eyes, nose and mouth with unwashed hands Cover your cough or sneeze with a tissue, then throw the tissue in the trash Clean and disinfect frequently touched objects
+                    and surfaces Stay home when you are sick For those of you traveling for Spring Break, please stay current with COVID-19 developments and travel advice found at the CDC travel site. Exercise caution while traveling for Spring Break,
+                    practice the above prevention points, and don’t come back after break if you are sick. &nbsp;
+                    <span class="articleLink">continue to article</span>
+                </p>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="pageContact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.960666081526!2d-111.62387724607557!3d42.6614074906568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1584915553282!5m2!1sen!2sus"
+                width="350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <section class="contactInfo">
+                <h3>Weather Hunter</h3>
+                151 E 2nd S
+                <br>Preston, ID 83263
+                <br>#208-852-0280
+                <br>info@weatherhunter.org
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js">
+    </script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/weatherP.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/sodaSprings.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Fish Haven, ID </title>
+    <meta name="description" content="Local weather for Fish Haven, Idaho">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <header>
+
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li><a href="preston.html" class="onPage">Preston</a>
+                    <li><a href="sodasprings.html" class="onPage">Soda Springs</a>
+                        <li class="active"><a href="fishhaven.html" class="onPage">Fish Haven</a>
+                            <li><a href="stormcenter.html" class="onPage">Storm Center</a>
+                                <li><a href="gallery.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="township">Fish Haven, Idaho</h2>
+        <div class="pageHero">
+            <picture>
+                <source srcset="images/fishHavenLRG.jpg" media="(min-width: 65em)">
+                <source srcset="images/fishHavenMED.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                <img class="heroImg" src="images/fishHavenSML.jpg" alt="responsive fish haven images">
+            </picture>
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="condition"></span> & <span id="current-temp"></span>&#176;F</p>
+                <p>Temp High: <span id="windT"></span>&#176;F</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windS"></span> MPH</p>
+            </section>
+        </div>
+        <div class="pageForecast">
+            <h3>5 Day Forecast</h3>
+            <div class="gridCast">
+                <div class="fore">
+                    <span class="foreCast" id="day1"></span>
+                    <img src="" alt="" id="icon1" />
+                    <span class="infoCast" id="foreTemp1"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day2"></span>
+                    <img src="" alt="" id="icon2" />
+                    <span class="infoCast" id="foreTemp2"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day3"></span>
+                    <img src="" alt="" id="icon3" />
+                    <span class="infoCast" id="foreTemp3"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day4"></span>
+                    <img src="" alt="" id="icon4" />
+                    <span class="infoCast" id="foreTemp4"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day5"></span>
+                    <img src="" alt="" id="icon5" />
+                    <span class="infoCast" id="foreTemp5"></span>
+                </div>
+            </div>
+            <div class="events"></div>
+        </div>
+        <div class="divArticle">
+
+            <div class="pageArticle">
+                <img src="images/fishingTheHavenKayak.jpg" alt="Picture of a Puppy Playing in the Snow" class="articlePuppers">
+                <h3>Fishing weather in Fish Haven</h3>
+                <h4>by Kyle Brazelton</h4>
+                <p>
+                    Too many hot days can make fish in shallow lakes, ponds, and rivers sluggish. The same thing happens in the winter when water temperatures are lower. Why? All fish are cold-blooded, meaning they can't keep their body temperature at a constant level. So
+                    the temperature of their surroundings influences the fish's body temperature and bodily functions. Really high and really low water temperatures reduce the amount of oxygen in the water, making fish less active and picky about when
+                    and what they. When it comes to finding the best fishing times, a good starting point is to avoid extreme temperatures. For more accurate analysis of the water to find out when the fish are biting, fish finders and water temperature
+                    gauges can give anglers up-to-the-minute feedback on temperature. Other factors like bright sunlight can also affect fish activity so it’s important to pay attention to the time of day you plan to go, which can make all the difference
+                    in your success. Fish generally prefer early morning and evening sun to the bright midday rays. In midday, the surface temperature of the water is also hotter, forcing the fish to move deeper. Tools like a daily fishing forecast –
+                    available online through resources like Farmers’ Almanac -- can help you learn if fish will be biting on a particular day and, if so, the best fishing times. &nbsp;
+                    <span class="articleLink">continue to article</span>
+                </p>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="pageContact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11853.046605930025!2d-111.40506310372999!3d42.037569315617546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1584915627929!5m2!1sen!2sus"
+                width="350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <section class="contactInfo">
+                <h3>Weather Hunter</h3>
+                151 E 2nd S
+                <br>Preston, ID 83263
+                <br>#208-852-0280
+                <br>info@weatherhunter.org
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js">
+    </script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/weatherP.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/fishHaven.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+@media only screen and (min-width: 65em) {
+    /*--------------MAIN PAGE/NAV BAR/COMMON ELEMENTS------------*/
+    nav {
+        background: #1e5799;
+        background: linear-gradient(to bottom, #1e5799 0%, #207cca 0%, #ff6700 0%, #e18d01 100%);
+    }
+    .primaryNav {
+        display: flex;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: block;
+    }
+    nav ul {
+        margin-left: 2%;
+        display: flex;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 2.8rem;
+    }
+    header img {
+        width: 250px;
+    }
+    .heroImg {
+        width: 100%;
+        height: auto;
+    }
+    .headings h1 {
+        font-size: 4rem;
+    }
+    main {
+        width: 75em;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .motto {
+        letter-spacing: 1.5pt;
+        font-size: x-large;
+        margin-left: 20px;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    .townsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem auto;
+    }
+    .townsContainer .towns {
+        margin: 0 .5rem;
+        padding: 0;
+        grid-row: 1;
+        grid-column: 1/ span 3;
+    }
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .towns section img {
+        grid-row: 6;
+        width: 100%;
+        height: auto;
+    }
+    .newsUp {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    /* ---- LAZY LOAD GALLERY ---*/
+    @import url('');
+    main .galleryMain {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .galleryImg {
+        border: 1px solid #333;
+        padding: 1.5px;
+        filter: blur(0.0em);
+        transition: filter 0.5s;
+        width: 300px;
+        height: 400px;
+    }
+    img[data-src] {
+        filter: blur(0.2em);
+    }
+    .galleryHead {
+        text-align: center;
+    }
+    .galleryFoot {
+        text-align: center;
+    }
+    /* ---- GALLERY PAGE ----*/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 12px 12px;
+        margin: 10px;
+    }
+    figure:hover {
+        box-shadow: 0 0px 50px black;
+    }
+    figure {
+        padding: 15px 5px 0px;
+    }
+    figure figcaption {
+        visibility: visible;
+    }
+    figure:hover figcaption {
+        visibility: visible;
+    }
+    /*------- PRESTON PAGE --------*/
+    .weatherSummary {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        background: radial-gradient(#ff6700, #e18d01);
+        border: 1px solid #000;
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #000;
+        opacity: .9;
+        font-size: 1.2rem;
+    }
+    .pageForecast {
+        display: inline;
+        margin: 10px auto;
+        padding: 20px;
+        color: #000;
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+    .gridCast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        grid-gap: 0px;
+    }
+    .gridCast {
+        display: flex;
+        flex-direction: row;
+    }
+    .fore {
+        flex: 1 1 100%;
+        background-color: rgba(65, 82, 54, 0.7);
+        color: #ccc;
+        text-align: center;
+        border: .25px solid #ccc;
+        font-style: italic;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    .foreCast,
+    .infoCast {
+        display: block;
+        font-style: italic;
+        font-size: 1.2rem;
+        padding: 10px;
+        justify-content: center;
+    }
+    .foreCast {
+        padding: 5px;
+        font-weight: 700;
+        font-size: 20px;
+        border-bottom: 1px solid #333;
+        background-color: rgba(7, 23, 26, 0.6);
+    }
+    .pageForecast img {
+        min-width: 3.8rem;
+    }
+    .pageContact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+        border: 1px solid #000000;
+        padding: 20px;
+        color: #fff;
+        background-color: rgba(65, 82, 54, 0.9);
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+    .pageMap {
+        display: inline;
+    }
+    .contactInfo p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .articlePuppers {
+        max-height: 20rem;
+    }
+    /*---------------SODA SPRINGS-------------*/
+    /*---------------FISH HAVEN-------------*/
+}

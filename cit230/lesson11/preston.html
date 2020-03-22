@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Weather Hunter, Preston ID </title>
+    <meta name="description" content="Local weather for Preston Idaho">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="/cit230/lesson6/images/favicon.ico">
+
+</head>
+
+<body>
+    <div id="satPancake" class="satPancake">
+        <span>
+        Saturday - Preston Pancakes in the Park! <br> 9:00 a.m. at the City Park.
+    </span>
+    </div>
+
+    <header>
+
+        <img class="wHunt" src="images/weatherIcon.png" alt="Weather Site Logo">
+        <div class="huntTitle">
+            <h1>Weather Hunter</h1>
+            <div class="motto">Hunting the weather, before it hunts you.</div>
+        </div>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"></li>
+            <li><a href="index.html" class="onPage">Home</a>
+                <li class="active"><a href="preston.html" class="onPage">Preston</a>
+                    <li><a href="sodasprings.html" class="onPage">Soda Springs</a>
+                        <li><a href="fishhaven.html" class="onPage">Fish Haven</a>
+                            <li><a href="stormcenter.html" class="onPage">Storm Center</a>
+                                <li><a href="gallery.html" class="onPage">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="township">Preston, Idaho</h2>
+        <div class="pageHero">
+            <picture>
+                <source srcset="images/idahoLRG.jpg" media="(min-width: 65em)">
+                <source srcset="images/idahoMED.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                <img class="heroImg" src="images/idahoSML.jpg" alt="responsive hero images">
+            </picture>
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="condition"></span> & <span id="current-temp"></span>&#176;F</p>
+                <p>Temp High: <span id="windT"></span>&#176;F</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windS"></span> MPH</p>
+            </section>
+        </div>
+        <div class="pageForecast">
+            <h3>5 Day Forecast</h3>
+            <div class="gridCast">
+                <div class="fore">
+                    <span class="foreCast" id="day1"></span>
+                    <img src="" alt="" id="icon1" />
+                    <span class="infoCast" id="foreTemp1"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day2"></span>
+                    <img src="" alt="" id="icon2" />
+                    <span class="infoCast" id="foreTemp2"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day3"></span>
+                    <img src="" alt="" id="icon3" />
+                    <span class="infoCast" id="foreTemp3"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day4"></span>
+                    <img src="" alt="" id="icon4" />
+                    <span class="infoCast" id="foreTemp4"></span>
+                </div>
+                <div class="fore">
+                    <span class="foreCast" id="day5"></span>
+                    <img src="" alt="" id="icon5" />
+                    <span class="infoCast" id="foreTemp5"></span>
+                </div>
+            </div>
+            <div class="events"></div>
+        </div>
+        <div class="divArticle">
+
+            <div class="pageArticle">
+                <img src="images/prestonArticleImagewk5.jpeg" alt="Picture of a Puppy Playing in the Snow" class="articlePuppers">
+                <h3>Playing in the Snow</h3>
+                <h4>by Kyle Brazelton</h4>
+                <p>
+                    Sometimes you just need to play with a puppy in the snow. Here at Weather Hunter we keep constant updates so that you know when is a good time to take your puppy out for a stroll in the snow, or weather you need to go buy some food and water to bunker
+                    down for the next blizzard which could hit at anytime! Severe weather can happen anytime, in any part of the country. Severe weather can include hazardous conditions produced by thunderstorms, including damaging winds, tornadoes, large
+                    hail, flooding and flash flooding, and winter storms associated with freezing rain, sleet, snow and strong winds. Lightning is a leading cause of injury and death from weather-related hazards. Although most lightning victims survive,
+                    people struck by lightning often report a variety of long-term, debilitating symptoms. Failing to evacuate flooded areas, entering flood waters, or remaining after a flood has passed can result in injury or death. Flooding is a temporary
+                    overflow of water onto land that is normally dry. Tornadoes can destroy buildings, flip cars, and create deadly flying debris. Tornadoes are violently rotating columns of air that extend from a thunderstorm to the ground. Floods are
+                    the most common natural disaster in the United States. So it's best to be prepared by making sure you are stocked up with your dialy necessities- remember you will eventually be able to get out and go to the store so hording isn't
+                    necessary, but having a good supply for about 2 weeks is always a good idea. This includes water, food, shampoo and other bathroom essentials, and of course, food and supplies for your pets! &nbsp;
+                    <span class="articleLink">continue to article</span>
+                </p>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="pageContact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77387294044!2d-111.91543020014137!3d42.099741600281554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1584915650675!5m2!1sen!2sus"
+                width="350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <section class="contactInfo">
+                <h3>Weather Hunter</h3>
+                151 E 2nd S
+                <br>Preston, ID 83263
+                <br>#208-852-0280
+                <br>info@weatherhunter.org
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        &copy; Weather Hunter &nbsp; | Kyle Brazelton | &nbsp;
+        <a id="onlineLearn" href="https://www.byui.edu/online"> BYUI Online Learning</a> &nbsp; | &nbsp; <span id="currentDate"></span>
+    </footer>
+    <script src="js/datemod.js">
+    </script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/weatherP.js"></script>
+    <script src="js/forecast.js"></script>
+    <script src="js/preston.js"></script>
+
+</body>
+
+</html>

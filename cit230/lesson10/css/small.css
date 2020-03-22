@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wHunt {
+    width: 150px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: black;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    background: #1e5799;
+    background: linear-gradient(to bottom, #1e5799 0%, #207cca 0%, #ff6700 0%, #e18d01 100%);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: rgba(227, 215, 185, 0.6);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+}
+
+footer {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #ff6700;
+    background: #1e5799;
+    background: linear-gradient(to bottom, #1e5799 0%, #207cca 0%, #ff6700 0%, #e18d01 100%);
+}
+
+#onlineLearn {
+    color: white;
+}
+
+.pageHero {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    position: relative;
+}
+
+.weatherSummary {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    padding-bottom: 20px;
+    background: radial-gradient(#ff6700, #e18d01);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #000;
+    opacity: .9;
+    font-size: .6rem;
+}
+
+.pageForecast {
+    display: none;
+}
+
+.gridCast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 0px;
+}
+
+.fore {
+    border: .25px solid #ccc;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.pageArticle {
+    margin: 10px auto;
+    border: 1px solid #000000;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(65, 82, 54, 0.9);
+    font-size: 1.2rem;
+    text-align: left;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.pageArticle p {
+    text-align: left;
+    flex-wrap: nowrap;
+    padding-right: 5px;
+}
+
+.pageArticle h4 {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.articlePuppers {
+    margin: auto;
+    border: 1px solid #000000;
+    float: right;
+    flex-wrap: nowrap;
+    width: 40%;
+    height: 40%;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.articleLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pageContact {
+    margin: 10px auto;
+    border: 1px solid #000000;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(65, 82, 54, 0.9);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.pageMap {
+    display: none;
+}
+
+.contactInfo {
+    margin: auto;
+    border: 1px solid #000000;
+    padding: 0px 15px 25px 15px;
+}
+
+.satPancake {
+    background: radial-gradient(#ff6700, #e18d01);
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

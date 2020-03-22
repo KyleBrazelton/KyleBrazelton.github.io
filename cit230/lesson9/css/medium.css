@@ -97,12 +97,14 @@
         width: 100%;
     }
     main section div.towns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
         width: 75%;
-        grid-gap: 12px 12px;
         margin: 10px;
         padding-bottom: 1em;
+    }
+    .towns section img {
+        flex-direction: row;
     }
     .contactInfo p {
         font-size: 1rem;
