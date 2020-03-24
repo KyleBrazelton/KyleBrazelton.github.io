@@ -210,10 +210,6 @@
      margin: 0 1.5rem;
  }
  
- .newsUp {
-     text-align: left;
- }
- 
  .towns section,
  .newsUpSec {
      margin: 0 auto;
@@ -228,8 +224,9 @@
      margin: 10px;
  }
  
- .newImg {
-     float: right;
+ .newsImg {
+     height: auto;
+     width: 100%;
  }
  
  .towns h2 {
