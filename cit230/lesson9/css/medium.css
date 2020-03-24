@@ -96,13 +96,6 @@
         display: inline-block;
         width: 100%;
     }
-    main section div.towns {
-        display: flex;
-        flex-wrap: wrap;
-        width: 75%;
-        margin: 10px;
-        padding-bottom: 1em;
-    }
     .towns section img {
         flex-direction: row;
     }
@@ -115,5 +108,16 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+    .towns section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 .5rem;
+    }
+    .towns section:nth-child(even) img {
+        grid-column: 2;
+    }
+    .towns section img {
+        grid-row: 1/span 5;
     }
 }

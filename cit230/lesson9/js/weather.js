@@ -17,14 +17,14 @@ fetch(requestURL)
             case 'Soda Springs':
                 let card = document.createElement('section');
                 let townName = document.createElement('h2');
-                let townMoto = document.createElement('h3');
+
                 let townFounded = document.createElement('p');
                 let townPopulation = document.createElement('p');
                 let townRainfall = document.createElement('p');
                 let image = document.createElement('img');
 
                 townName.textContent = town.name;
-                townMoto.textContent = town.moto;
+
                 townFounded.textContent = 'Year Founded: ' + town.yearFounded;
                 townPopulation.textContent = 'Population: ' + town.currentPopulation;
                 townRainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
@@ -32,7 +32,7 @@ fetch(requestURL)
                 image.setAttribute('alt', 'photo of ' + town.name);
 
                 card.appendChild(townName);
-                card.appendChild(townMoto);
+
                 card.appendChild(townFounded);
                 card.appendChild(townPopulation);
                 card.appendChild(townRainfall);

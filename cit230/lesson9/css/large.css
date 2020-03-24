@@ -125,19 +125,29 @@
             form label.sbs {
                 padding: .4rem 0;
             }
-            main section div.towns {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 12px 12px;
-                margin: 10px;
-                padding-bottom: 1em;
-            }
-            .towns img {
-                width: 60%;
-            }
             .townsContainer {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin: 1rem auto;
+            }
+            .townsContainer .towns {
+                margin: 0 .5rem;
+                padding: 0;
+                grid-row: 1;
+                grid-column: 1/ span 3;
+            }
+            .towns {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+            }
+            .towns section img {
+                grid-row: 6;
+                width: 100%;
+                height: auto;
+            }
+            .newsUp {
+                width: 1100px;
+                margin: 0 auto;
             }
         }
