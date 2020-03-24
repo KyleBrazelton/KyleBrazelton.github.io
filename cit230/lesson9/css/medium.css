@@ -110,4 +110,10 @@
         font-size: 1rem;
         text-align: left;
     }
+    .townsContainer {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }

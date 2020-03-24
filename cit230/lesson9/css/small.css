@@ -257,21 +257,61 @@ body .stormIt {
     text-align: left;
 }
 
-.newsUp {
-    text-align: left;
+.home-container {
+    display: block;
+    width: 100%;
+    margin: 0;
 }
 
 .towns {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 12px 12px;
-    justify-items: center;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 1rem;
+    padding: 1rem 0;
+    margin: 0 1.5rem;
+}
+
+.towns section,
+.newsUpSec {
+    margin: 0 auto;
+    background-color: rgba(65, 82, 54, 0.5);
+    border: .5px solid rgba(65, 82, 54, 0.9);
+    box-shadow: 0 0 15px #313131a9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.newsUpSec {
     margin: 10px;
 }
 
-.towns section {
-    background-color: rgba(65, 82, 54, 0.3);
-    padding-bottom: 1em;
+.newsImg {
+    height: auto;
+    width: 100%;
+}
+
+.towns h2 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.towns-title {
+    margin: 1rem 0 0 0;
+}
+
+.towns-motto {
+    font-style: italic;
+}
+
+.towns-text,
+.towns-motto {
+    margin: 0 0 1rem 0;
+}
+
+.towns section img {
+    width: 100%;
+    height: auto;
 }
 
 .clearfix:after {
