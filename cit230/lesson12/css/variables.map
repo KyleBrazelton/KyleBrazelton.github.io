@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"$primaryColor: #e4c517;\r\n$fontFamily: \"Quicksand', sans-serif;\";\r\n$regularWeight:300;\r\n$heavyWeight:700;\r\n$gutter: 2%;"
+	],
+	"names": [],
+	"mappings": ""
+}
