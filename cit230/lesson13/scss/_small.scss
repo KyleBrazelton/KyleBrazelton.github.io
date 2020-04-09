@@ -1,0 +1,220 @@
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+.copywrite,
+.booknow {
+    font-family: $fontFamilyHead;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    padding: 5px;
+}
+
+.booknow,
+.contentsquare {
+    display: none;
+}
+
+.booknow {
+    font-size: .8rem;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    background: $primaryColor;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(102, 252, 241, 0.3);
+}
+
+nav ul li a:hover {
+    background-color: $accentColor;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+picture {
+    margin: 10px;
+}
+
+.boxcontent {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.midcontent {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.socials {
+    width: 20%;
+}
+
+.grouppic {
+    width: 50%;
+}
+
+.copywrite {
+    flex: right;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: $primaryColor;
+    background: $primaryColor;
+    justify-items: center;
+    align-items: center;
+}
+
+.footerlogo {
+    display: none;
+    width: 1%;
+}
+
+.actHead ul li {
+    list-style-type: none;
+}
+
+.box1,
+.box2,
+.box3 {
+    box-shadow: 0 2px 5px $darkColor;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.cards section,
+.cards section section,
+.cards section section section {
+    box-shadow: 0 2px 5px $darkColor;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cards section img,
+.cards section section img,
+.cards section section section img {
+    box-shadow: 0 4px 7px $darkColor;
+}
+
+body .contactInfo {
+    text-align: left;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid $darkColor;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: $primaryColor;
+    font-size: 1.2rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.top input:required {
+    border-left: $primaryColor solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #415236 solid 6px;
+}
+
+legend {
+    color: $primaryColor;
+}
+
+.contactainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contakid {
+    padding: 10px;
+}
+
+.learnmore a:link {
+    color: $primaryColor;
+}
+
+.learnmore a:visited {
+    color: $primaryColor;
+}
+
+.learnmore a:hover {
+    color: $accentColor;
+}

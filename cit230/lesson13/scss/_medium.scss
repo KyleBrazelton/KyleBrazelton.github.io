@@ -1,0 +1,43 @@
+.grouppic {
+    width: 40%;
+}
+
+.booknow,
+.contentsquare {
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: solid black 1px;
+    padding: 5px;
+    display: inline-block;
+    color: black;
+}
+
+.booknow {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding-bottom: 5px;
+    border: 1px solid $medColor;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px $medColor;
+    font-size: 1rem;
+}
+
+.contentsquare {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding-bottom: 5px;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px $medColor;
+}
+
+.contentsquare {
+    color: black;
+}
+
+.footerlogo {
+    display: inline-block;
+    width: 20%;
+}

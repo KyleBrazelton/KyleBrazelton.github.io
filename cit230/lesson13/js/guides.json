@@ -1,0 +1,27 @@
+{
+    "guides": [{
+            "name": "Kal Storm",
+            "imageurl": "images/kalstorm.jpg",
+            "certification": "Master Level",
+            "yearsExperience": 14,
+            "email": "kal@sra.com",
+            "bio": "Born and raised in a small village Kal has worked hard his whole life. Initially he wanted to become, and trained to become a doctor, but has since given into his passion to be on the wave riding the rivers. He has been here for about 14 years and plans on going until he can't go anymore."
+        },
+        {
+            "name": "Sil Wind",
+            "imageurl": "images/silwind.jpg",
+            "certification": "Intermediate Level",
+            "yearsExperience": 6,
+            "email": "sil@sra.com",
+            "bio": "Sil has been training to become a master level certified white rapid kayak specialist. She is all but there except for years of experience. She can go toe to toe with some of the best Kayakers in the world. Born and raised in Salt Lake, she has moved to SRA to pursue her dream of flying on the waters."
+        },
+        {
+            "name": "Rock Kaliki",
+            "imageurl": "images/rock.jpg",
+            "certification": "Master Level",
+            "yearsExperience": 8,
+            "email": "rock@sra.com",
+            "bio": "Rock has been in the water since he was 2 years old. Born and raised in Russia Rock moved to Idaho when he was 18 and fell in love with the outdoors. He is a friendly and compassionate guide, capable of traversing the most treacherous of waters. Rock will do whatever it takes to beat the harsh rivers with pure strength."
+        }
+    ]
+}

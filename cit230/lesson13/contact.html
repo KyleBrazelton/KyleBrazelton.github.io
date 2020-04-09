@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="description" content="Salmon River Adventures Home Page">
+    <title></title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="booknow">Book Your Trip Now! <br> Riggins, ID<br><span id="weatherRiggins"></span></div>
+            <img src="images/SRAlogoblk.png" class="logo" alt="Salmon River Adventure Logo">
+            <div class="topnav">
+                <div class="botnav">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" class="onPage">HOME</a>
+                <li class=><a href="activities.html" class="onPage">RESERVATIONS</a>
+                    <li><a href="guides.html" class="onPage">OUR GUIDES</a>
+                        <li class="active"><a href="contact.html" class="onPage">CONTACT US</a>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>
+            CONTACT US
+        </h2>
+
+        <h3 class="contactInfo">NEWSLETTER/CONTACT</h3>
+        <form class="contactInfo" method="get" action="thanks.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="top">Phone <input type="tel" name="phone" pattern="[0-9].{10}" required placeholder="6235662333"></label>
+                <label class="top">Email* <input type="email" name="email"  placeholder="kyle@sra.com"></label>
+                <label class="top">Zip Code <input type="text" name="zip" pattern="[0-9]*" placeholder="85383" required ></label>
+            </fieldset>
+        </form>
+
+        <section class="contactainer">
+            <div class="contakid">
+                <h3>CONTACT INFORMATION</h3>
+                <span>(208) 628-3862</span>
+                <br> <span>contact@sra.com</span>
+                <br>
+                <span>913 Mc Arthur Ave, <br>Riggins ID 83549</span>
+            </div>
+            <div class="contakid">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18840.226600572754!2d-116.33260974161627!3d45.41707364385824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c55ddc7fd9d5%3A0x835ef2ac6cb8432e!2sRiggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1586403844293!5m2!1sen!2sus"
+                    width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="copywrite"> &copy;Salmon River Adventures</section>
+        <section>
+            <img src="images/SRAlogoblk.png" class="footerlogo" alt="Salmon River Adventures Logo">
+        </section>
+        <section class="social">
+            <img class="socials" src="images/Facebook_3.png" alt="Facebook Logo">
+            <img class="socials" src="images/Instagram_3.png" alt="Instagram Logo">
+            <img class="socials" src="images/Youtube_3.png" alt="Youtube Logo">
+        </section>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/guides.json"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

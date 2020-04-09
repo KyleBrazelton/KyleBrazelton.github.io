@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="description" content="Salmon River Adventures Home Page">
+    <title></title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="booknow">Book Your Trip Now! <br> Riggins, ID<br><span id="weatherRiggins"></span></div>
+            <img src="images/SRAlogoblk.png" class="logo" alt="Salmon River Adventure Logo">
+            <div class="topnav">
+                <div class="botnav">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" class="onPage">HOME</a>
+                <li><a href="activities.html" class="onPage">RESERVATIONS</a>
+                    <li class="active"><a href="guides.html" class="onPage">OUR GUIDES</a>
+                        <li><a href="contact.html" class="onPage">CONTACT US</a>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>OUR GUIDES</h2>
+        <div class="cards"></div>
+    </main>
+
+    <footer>
+        <section class="copywrite"> &copy;Salmon River Adventures</section>
+        <section>
+            <img src="images/SRAlogoblk.png" class="footerlogo" alt="Salmon River Adventures Logo">
+        </section>
+        <section class="social">
+            <img class="socials" src="images/Facebook_3.png" alt="Facebook Logo">
+            <img class="socials" src="images/Instagram_3.png" alt="Instagram Logo">
+            <img class="socials" src="images/Youtube_3.png" alt="Youtube Logo">
+        </section>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script type="text/javscript" src="js/guides.json"></script>
+    <script src="js/guides.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

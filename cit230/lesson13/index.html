@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="description" content="Salmon River Adventures Home Page">
+    <title></title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+
+
+        <div class="top">
+            <div class="booknow">Book Your Trip Now! <br> Riggins, ID<br><span id="weatherRiggins"></span></div>
+            <img src="images/SRAlogoblk.png" class="logo" alt="Salmon River Adventure Logo">
+            <div class="topnav">
+                <div class="botnav">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html" class="onPage">HOME</a>
+                <li class=><a href="activities.html" class="onPage">RESERVATIONS</a>
+                    <li><a href="guides.html" class="onPage">OUR GUIDES</a>
+                        <li><a href="contact.html" class="onPage">CONTACT US</a>
+
+        </ul>
+    </nav>
+    <main>
+
+
+        <div class="triplethreat">
+            <section class="box1">
+                <H3>RAFTING</H3>
+                <picture>
+                    <source srcset="images/wwgrouplrg.jpg" media="(min-width: 65em)">
+                    <source srcset="images/wwgroupmed.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                    <img class="grouppic" src="images/wwgroupsml.jpg" alt="Group Raft Image">
+                </picture>
+                <div class="boxcontent">
+                    <p>Here in Riggins Idaho we offer some fantastic opportunites for group rafting. The weather in the summer is perfect and it is a great spot to bring any sort of scouting group, family reunion, couples retreats, or just a good ole group
+                        of friends. Come on down to Salmon River adventures to experience a great white water, or easy flowing rafting trip. </p>
+                </div>
+                <div class="learnmore">
+                    <a href="contact.html">
+                        <br><br>
+                        <h4>-CONTACT US-</h4>
+                    </a>
+                </div>
+            </section>
+            <section class="box2">
+                <H3>KAYAKING</H3>
+                <picture>
+                    <source srcset="images/wwkayakslrg.jpg" media="(min-width: 65em)">
+                    <source srcset="images/wwkayaksmed.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                    <img class="grouppic" src="images/wwkayakssml.jpg" alt="Kayak Adventure Image">
+                </picture>
+                <div class="boxcontent">
+                    <p>Who doesn't love a good kayak ride down some white rapid rivers? Or who doesn't like taking a leisurely paddle across a smooth glassy river in the early morning or evening. We offer a variety of kayaking trips, and cater to the desires,
+                        abilities, and skills of our customers. Come on down to Salmon River Adventures to find the perfect Kayak trip for you and your friends.</p>
+                </div>
+                <div class="learnmore">
+                    <a href="contact.html">
+                        <br><br>
+                        <h4>-CONTACT US-</h4>
+                    </a>
+                </div>
+            </section>
+            <section class="box3">
+                <H3>TUBING</H3>
+                <picture>
+                    <source srcset="images/lazyrivertubelrg.jpg" media="(min-width: 65em)">
+                    <source srcset="images/lazyrivertubemed.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                    <img class="grouppic" src="images/lazyrivertubesml.jpg" alt="Lazy River Image">
+                </picture>
+                <div class="boxcontent">
+                    <p>We have to admit that this is the most relaxing trip that you can take. Whether you want to swim around with your family getting your tan on, or just take a leisurely stroll. We provide you the trip of a liftime, passing through some
+                        of the best river side scenery that Idaho has to offer. Our tubing trips are highly rated and are recommended to others by almost everyone who has come with Salmon River Adventures in the past.</p>
+                </div>
+                <div class="learnmore">
+                    <a href="contact.html">
+                        <h4>-CONTACT US-</h4>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <div class="midcontent">
+            <h2>WHY SRA?</h2>
+            <p>Here at Salmon River Adventures we pride ourselves on giving people the river experience of a lifetime. We cater to all crowds and show them a great time on the water, from group rafting to white water kayaking, all the way to easy going river
+                floating. You may have experienced a good time on the water before, but here at Salmon River Adventures we take care of everything the moment you get on our shore. From great meals made from scratch on the riverside to planning out your
+                adventure to a tee. We cater to big groups, small groups, couples, and individuals. It doesn't matter who you are, we will show you how to have fun on the water. Call us today so that we can get you booked for the season. Act now before
+                we are completely booked up. </p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <section class="copywrite"> &copy;Salmon River Adventures</section>
+        <section>
+            <img src="images/SRAlogoblk.png" class="footerlogo" alt="Salmon River Adventures Logo">
+        </section>
+        <section class="social">
+            <img class="socials" src="images/Facebook_3.png" alt="Facebook Logo">
+            <img class="socials" src="images/Instagram_3.png" alt="Instagram Logo">
+            <img class="socials" src="images/Youtube_3.png" alt="Youtube Logo">
+        </section>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/guides.json"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

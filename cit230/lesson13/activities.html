@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="description" content="Salmon River Adventures Home Page">
+    <title></title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="booknow">Book Your Trip Now! <br> Riggins, ID<br><span id="weatherRiggins"></span></div>
+            <img src="images/SRAlogoblk.png" class="logo" alt="Salmon River Adventure Logo">
+            <div class="topnav">
+                <div class="botnav">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" class="onPage">HOME</a>
+                <li class="active"><a href="activities.html" class="onPage">RESERVATIONS</a>
+                    <li><a href="guides.html" class="onPage">OUR GUIDES</a>
+                        <li><a href="contact.html" class="onPage">CONTACT US</a>
+
+        </ul>
+    </nav>
+    <main>
+        <h3>
+            RESERVATIONS
+        </h3>
+
+        <div class="triplethreat">
+            <section class="box1">
+                <H3>RAFTING</H3>
+                <picture>
+                    <source srcset="images/wwgrouplrg.jpg" media="(min-width: 65em)">
+                    <source srcset="images/wwgroupmed.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                    <img class="grouppic" src="images/wwgroupsml.jpg" alt="Group Raft Image">
+                </picture>
+                <div class="boxcontent">
+                    <p>Skill Level: 2 </p>
+                    <p>Length: 3hrs</p>
+                    <P>Cost: $250 per person, equipment and meals included in the cost.</P>
+                </div>
+                <div class="learnmore">
+                    <a href="contact.html">
+                        <h4>BOOK NOW!</h4>
+                    </a>
+                </div>
+            </section>
+            <section class="box2">
+                <H3>KAYAKING</H3>
+                <picture>
+                    <source srcset="images/wwkayakslrg.jpg" media="(min-width: 65em)">
+                    <source srcset="images/wwkayaksmed.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                    <img class="grouppic" src="images/wwkayakssml.jpg" alt="Kayak Adventure Image">
+                </picture>
+                <div class="boxcontent">
+                    <p>Skill Level: 3 </p>
+                    <p>Length: 6hrs</p>
+                    <P>Cost: $500 per person, equipment and meals included in the cost.</P>
+                </div>
+                <div class="learnmore">
+                    <a href="contact.html">
+                        <h4>BOOK NOW!</h4>
+                    </a>
+                </div>
+            </section>
+            <section class="box3">
+                <H3>TUBING</H3>
+                <picture>
+                    <source srcset="images/lazyrivertubelrg.jpg" media="(min-width: 65em)">
+                    <source srcset="images/lazyrivertubemed.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                    <img class="grouppic" src="images/lazyrivertubesml.jpg" alt="Lazy River Image">
+                </picture>
+                <div class="boxcontent">
+                    <p>Skill Level: 1 </p>
+                    <p>Length: 3hrs</p>
+                    <P>Cost: $100 per person, equipment and meals included in the cost.</P>
+                </div>
+                <div class="learnmore">
+                    <a href="contact.html">
+                        <h4>BOOK NOW!</h4>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <BR>
+        <h3 class="contactInfo">REGISTRATION FORM</h3>
+        <form class="contactInfo" method="get" action="thanks.html">
+            <fieldset>
+                <legend>Activity Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="top">Phone <input type="tel" name="phone" pattern="[0-9].{10}" required placeholder="6235662333"></label>
+                <label class="top">Email* <input type="email" name="email"  placeholder="kyle@sra.com"></label>
+                <label class="top">Zip Code <input type="text" name="zip" pattern="[0-9]*" placeholder="85383" required ></label>
+                <label class="top">Activity Start Date  <input type="date" name="date" ></label>
+                <label class="top">Activity Type <input type="text" list="activityType" name="activityType" placeholder="Select Activity Type">
+                    <datalist id="activityType">
+                    <option value=""> &#9662;</option>
+                    <option value="Rafting"></option>
+                    <option value="Kayaking"> </option>
+                    <option value="Tubing"> </option> 
+                </datalist> </label>
+                <fieldset>
+                    <legend>Other Information</legend>
+                    <label class="top" for="information">Additional Information/Comments </label>
+                    <textarea id="information" name="information" placeholder="Please fill out any other relevant information." rows="4" cols="40"></textarea>
+
+                </fieldset>
+                <input type="submit" value="Submit" class="submitBtn">
+        </form>
+
+    </main>
+
+    <footer>
+        <section class="copywrite"> &copy;Salmon River Adventures</section>
+        <section>
+            <img src="images/SRAlogoblk.png" class="footerlogo" alt="Salmon River Adventures Logo">
+        </section>
+        <section class="social">
+            <img class="socials" src="images/Facebook_3.png" alt="Facebook Logo">
+            <img class="socials" src="images/Instagram_3.png" alt="Instagram Logo">
+            <img class="socials" src="images/Youtube_3.png" alt="Youtube Logo">
+        </section>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/guides.json"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
