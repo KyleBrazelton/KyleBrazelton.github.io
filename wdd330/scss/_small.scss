@@ -1,0 +1,67 @@
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $fontFamilyHead;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main footer {
+    max-width: 95%;
+    margin: auto;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer a:link {
+    color: $accentColor;
+}
+
+footer a:visited {
+    color: $accentColor;
+}
+
+footer a:hover {
+    color: $darkColor;
+}
+
+a:link {
+    color: $primaryColor;
+}
+
+a:visited {
+    color: $primaryColor;
+}
+
+a:hover {
+    color: $accentColor;
+}
+
+footer,
+h2 {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: $primaryColor;
+    background: $primaryColor;
+    justify-items: center;
+    align-items: center;
+}
