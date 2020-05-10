@@ -31,6 +31,10 @@ li {
     padding-left: 0;
 }
 
+ul li {
+    display: inline;
+}
+
 footer a:link {
     color: $accentColor;
 }
