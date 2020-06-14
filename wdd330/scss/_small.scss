@@ -69,3 +69,34 @@ h2 {
     justify-items: center;
     align-items: center;
 }
+
+.translate {
+    transform: translate(75px, 25px);
+}
+.rotate {
+    transform: rotate(20deg);
+}
+.scale {
+    transform: scale(3, 2.75);
+}
+.skew {
+    transform: skew(20deg, 10deg);
+}
+.hover {
+    color: $darkColor;
+    transition: color 2s;
+}
+.hover:hover {
+    color: $primaryColor
+}
+
+@keyframes example {
+    from {background-color: $darkColor;}
+    to {background-color: $primaryColor;}
+  }
+
+  .animations {
+      color: white;
+    animation-name: example;
+    animation-duration: 4s;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 8: WDD330</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kyle Brazelton's portal WDD 330 - NOTES/EXAMPLES">
+    <link rel="stylesheet" href="/wdd330/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <h1>WDD 330</h1>
+</header>
+<main>
+    <section class="sect1">
+        <h2>WEEK 8 Notes</h2>
+        <h3>Transforms</h3>
+        <div>Translate</div>
+        <div class="translate">Translate</div>
+        <br>
+        <div>Rotate</div>
+        <div class="rotate">Rotate</div>
+        <br>
+        <div >Scale</div>
+        <div class="scale">Scale</div>
+        <br>
+        <div>Skew</div>
+        <div class="skew">Skew</div>
+        <br>
+        <h3>Transitions</h3>
+        <div>Hover</div>
+        <div class="hover">Hover</div>
+        <h3>Animations</h3>
+        <div>Animations</div>
+        <div class="animations">Animations</div>
+        <h3>Canvas</h3>
+        <canvas id="canvasBox" width="200" height="100" style="border:1px solid green;">
+           No Browser Support.</canvas>
+       
+
+    </section>
+</main>
+<footer>
+    &copy;
+    <span id="currentYear"></span> | Kyle Brazelton |
+    <a id="onlineLearn" href="https://www.byui.edu/online">BYUI Online Learning</a> <span id="updatePage"></span>
+</footer>
+
+<script>
+    let canvas = document.getElementById("canvasBox");
+    let circle = canvas.getContext("2d");
+    
+    let grd = circle.createLinearGradient(0, 0, 400, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    
+    circle.fillStyle = grd;
+    circle.fillRect(10, 10, 150, 80);</script>
+</body>
+
+</html>
