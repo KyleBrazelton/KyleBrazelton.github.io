@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Team 3 Auth Example</title>
+    <link rel="stylesheet" media="screen" href="styles.css">
+</head>
+<body>
+    <h1>Auth Example- Team 3</h1>
+    <form>
+        <fieldset>
+            <label name="email">
+                Email/Username:
+                <input name="email" type="email" placeholder="myemail@email.com" required/>
+            </label>
+            <br />
+            <label name="password">
+                Password:
+                <input name="password" type="text" placeholder="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"/>
+            </label>
+            <button type="button">Submit</button>
+        </fieldset>
+    </form>
+
+    <script type="module">
+        import { makeRequest, baseURL } from "./authHelpers.js";
+        import { Auth } from "./auth.js";
+
+        makeRequest('login', 'POST', {
+            password: 'user1',
+            email: 'user1@email.com'
+        });
+
+    </script>
+   
+</body>
+</html>

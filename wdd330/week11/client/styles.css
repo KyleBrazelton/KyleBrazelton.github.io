@@ -1,0 +1,33 @@
+
+
+fieldset{
+    border-radius: 5px;
+    padding: 1em;
+
+}
+
+input{
+    padding: .5em;
+    border-radius: 5px;
+    margin: .5em 0;
+}
+
+label{
+    padding: .5em 0;
+}
+
+input:required {
+    border-bottom-color: #801515;
+    border-right-color: #801515;
+}
+
+input:invalid{
+    background-color: #ffaaaa;
+}
+
+button{
+    display: block;
+    border-radius: 5px;
+    padding: .5em;
+    margin: 1em 0;
+}
